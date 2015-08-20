@@ -1,0 +1,16 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+<beans>
+<!-- USING DEFAULT HANDLER -->
+
+<!-- CONTROLLER CLASSES -->
+	<bean name="/hello.htm" class="controller.HelloController"/>
+	
+<!-- VIEW RESOLVER -->
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/output/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+</beans>
