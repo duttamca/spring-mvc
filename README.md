@@ -1,2 +1,3 @@
 # spring-mvc
-Spring MVC demo application
+Spring MVC demo application using Maven
+
