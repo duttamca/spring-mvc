@@ -15,7 +15,7 @@ public class HelloController implements Controller {
 			HttpServletResponse res) throws Exception {
 		String name = req.getParameter("name");
 		Map map = new HashMap();
-		map.put("msg", "Hello..." +name);
+		map.put("msg", "Hello..." +name +"HOW ARE YOU");
 		return new ModelAndView("success", map);
 	}
 
